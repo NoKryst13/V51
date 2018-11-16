@@ -1,0 +1,2 @@
+# V51
+Operationsverstärker
