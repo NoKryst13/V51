@@ -1,0 +1,102 @@
+\documentclass[
+  bibliography=totoc,
+  captions=tableheading,
+  titlepage=firstiscover,
+]{scrartcl}\usepackage{scrhack}\usepackage[aux]{rerunfilecheck}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{fontspec}
+\recalctypearea{}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\usepackage[
+  math-style=ISO,
+  bold-style=ISO,
+  sans-style=italic,
+  nabla=upright,
+  partial=upright,
+  warnings-off={
+    mathtools-colon,
+    mathtools-overbracket,
+  },
+]{unicode-math}
+\setmathfont{Latin Modern Math}
+\setmathfont{XITS Math}[range={scr, bfscr}]
+\setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
+\usepackage[
+  locale=DE,
+  separate-uncertainty=true,
+  per-mode=symbol-or-fraction,
+]{siunitx}
+\usepackage[
+  version=4,
+  math-greek=default,
+  text-greek=default,
+]{mhchem}
+\usepackage[autostyle]{csquotes}
+\usepackage{xfrac}
+\usepackage{rotating}
+\usepackage{float}
+\floatplacement{figure}{htbp}
+\floatplacement{table}{htbp}
+\usepackage[
+  section,
+  below,
+]{placeins}
+\usepackage{pdflscape}
+\usepackage[
+  labelfont=bf,
+  font=small,
+  width=0.9\textwidth,
+]{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage[
+  backend=biber,
+]{biblatex}
+\addbibresource{lit.bib}
+\addbibresource{programme.bib}
+\usepackage[
+  unicode,
+  pdfusetitle,
+  pdfcreator={},
+  pdfproducer={},
+]{hyperref}
+\usepackage[europeanresistors]{circuitikz}
+\usepackage{tikz-feynman}
+\usepackage{bookmark}
+\usepackage[shortcuts]{extdash}
+\author{
+  Kevin Mika\\
+  \href{kevin.mika@tu-dortmund.de}{kevin.mika@tu-dortmund.de}%
+  \texorpdfstring{\and}{,}
+  Noah Krystiniak\\
+  \href{noah.krystiniak@tu-dortmund.de}{noah.krystiniak@tu-dortmund.de}%
+}
+\publishers{TU Dortmund – Faculty of Physics}
+\subject{51}
+\title{Operational amplifier}
+\date{%
+  Execution: 13.11.2018
+}
+\usepackage{fancyhdr}
+\usepackage{csvsimple}
+\pagestyle{fancy}
+\rhead{V51 Operational amplifier}
+\lhead{Kevin Mika, Noah Krystiniak}
+\begin{document}
+\maketitle
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+%\input{Tex/theorie.tex}
+\input{Tex/durchf.tex}
+%\input{Tex/auswertung.tex}
+%\input{Tex/diskussion.tex}
+\printbibliography{}
+\end{document}
