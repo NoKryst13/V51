@@ -1,0 +1,19 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Operational Amplifier in General}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Linear Amplifier}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Electrometer Amplifier}{5}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Inverting Integrator}{6}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Inverting Differentiator}{6}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Schmitt-Trigger}{7}{subsection.1.6}
+\contentsline {section}{\numberline {2}Execution}{7}{section.2}
+\contentsline {section}{\numberline {3}Evaluation}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Inverting Linear Amplifier}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Terminal Voltage}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Inverting Integrator}{12}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Inverting Differentiator}{15}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Schmitt-Trigger}{19}{subsection.3.5}
+\contentsline {section}{\numberline {4}Discussion}{19}{section.4}
+\contentsline {section}{\nonumberline References}{20}{section*.24}

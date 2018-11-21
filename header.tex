@@ -1,0 +1,107 @@
+\documentclass[
+  bibliography=totoc,     % Literatur im Inhaltsverzeichnis
+  captions=tableheading,  % TabellenÃ¼berschriften
+  titlepage=firstiscover, % Titelseite ist Deckblatt
+]{scrartcl}
+\usepackage{pgfplotstable}
+\usepackage{array}
+\usepackage{scrhack}
+\usepackage[aux]{rerunfilecheck}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{fontspec}
+\recalctypearea{}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\usepackage[
+  math-style=ISO,    % â”
+  bold-style=ISO,    % â”‚
+  sans-style=italic, % â”‚ ISO-Standard folgen
+  nabla=upright,     % â”‚
+  partial=upright,   % â”˜
+  warnings-off={           % â”
+    mathtools-colon,       % â”‚ unnÃ¶tige Warnungen ausschalten
+    mathtools-overbracket, % â”‚
+  },                       % â”˜
+]{unicode-math}
+\setmathfont{Latin Modern Math}
+\setmathfont{XITS Math}[range={scr, bfscr}]
+\setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
+\usepackage[
+  locale=US,                   % deutsche Einstellungen
+  separate-uncertainty=true,   % immer Fehler mit \pm
+  per-mode=symbol-or-fraction, % / in inline math, fraction in display math
+]{siunitx}
+\usepackage[
+  version=4,
+  math-greek=default, % â” mit unicode-math zusammenarbeiten
+  text-greek=default, % â”˜
+]{mhchem}
+\usepackage{csvsimple}
+\usepackage[autostyle]{csquotes}
+\usepackage{xfrac}
+\usepackage{float}
+\floatplacement{figure}{htbp}
+\floatplacement{table}{htbp}
+\usepackage[
+  section, % Floats innerhalb der Section halten
+  below,   % unterhalb der Section aber auf der selben Seite ist ok
+]{placeins}
+\usepackage{pdflscape}
+\usepackage[
+  labelfont=bf,        % Tabelle x: Abbildung y: ist jetzt fett
+  font=small,          % Schrift etwas kleiner als Dokument
+  width=0.9\textwidth, % maximale Breite einer Caption schmaler
+]{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage[backend=biber]{biblatex}
+\bibliography{lit}
+\addbibresource{lit.bib}
+%\addbibresource{programme.bib}
+\usepackage[
+  unicode,        % Unicode in PDF-Attributen erlauben
+  pdfusetitle,    % Titel, Autoren und Datum als PDF-Attribute
+  pdfcreator={},  % â” PDF-Attribute sÃ¤ubern
+  pdfproducer={}, % â”˜
+]{hyperref}
+\usepackage{circuitikz}
+\usepackage{bookmark}
+\usepackage[shortcuts]{extdash}
+\author{%
+  Kevin Mika\\%
+  \href{kevin.mika@tu-dortmund.de}{kevin.mika@tu-dortmund.de}%
+  \texorpdfstring{\and}{,}%
+  Noah Krystiniak\\%
+  \href{noah.krystiniak@tu-dortmund.de}{noah.krystiniak@tu-dortmund.de}%
+}
+\publishers{TU Dortmund Faculty of Physics}
+\subject{}
+\title{}
+\date{
+  Execution: 14.11.2018
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{V51 Operational Amplifier} %kopfzeile auf jeder Seite
+\lhead{Kevin Mika, Noah Krystiniak}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+%\input{ziel.tex}
+\input{theorie.tex}
+\input{durchfuehrung.tex}
+\input{auswertung.tex}
+\input{diskussion.tex}
+%\input{anhang.tex}
+%\input{quellen.tex}
+\printbibliography{}
+
+\end{document}
